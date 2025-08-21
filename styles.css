@@ -1550,7 +1550,68 @@ body {
 .thesis-card:hover::before {
     transform: translateX(100%);
 }
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .slide {
+        padding: 30px;
+    }
+    
+    /* Timeline points for 6 items */
+    .timeline-point:nth-child(2) { left: 10%; }
+    .timeline-point:nth-child(3) { left: 26%; }
+    .timeline-point:nth-child(4) { left: 42%; }
+    .timeline-point:nth-child(5) { left: 58%; }
+    .timeline-point:nth-child(6) { left: 74%; }
+    .timeline-point:nth-child(7) { left: 90%; }
+    
+    /* Responsive team layout - 2 columns on tablets */
+    .team-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ceo-card {
+        max-width: 600px;
+        padding: 30px;
+    }
+    
+    .financial-content-wrapper {
+        flex-direction: column;
+    }
+}
 
+@media (max-width: 768px) {
+    .slide {
+        padding: 20px;
+    }
+    
+    .proof-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .bottom-metrics {
+        flex-direction: column;
+    }
+    
+    /* Single column on mobile */
+    .team-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .ceo-card {
+        max-width: 100%;
+        padding: 25px;
+    }
+    
+    .team-member-card {
+        padding: 25px 20px;
+    }
+    
+    .partnerships-grid,
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
 .thesis-metric {
     font-size: clamp(28px, 3.5vw, 42px);
     font-weight: 800;
