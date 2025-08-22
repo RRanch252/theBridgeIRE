@@ -1888,3 +1888,23 @@ body {
 .team-slide .founder-card * {
     background: transparent !important;
 }
+
+/* Force the text colors to show properly */
+.team-slide .founder-card .founder-name {
+    color: #fff !important;
+}
+
+.team-slide .founder-card .founder-role {
+    color: #ff0066 !important;
+}
+
+.team-slide .founder-card .founder-achievement {
+    color: #ccc !important;
+}
+
+/* Make absolutely sure the founder image has gradient */
+.team-slide .founder-card .founder-image {
+    background: linear-gradient(135deg, #ff0066, #ff3399) !important;
+    color: #fff !important;
+}
+}
