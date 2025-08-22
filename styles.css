@@ -265,42 +265,24 @@ body {
     line-height: 1.5;
 }
 
-/* Slide 3: Team - FIXED FOR 7 MEMBERS */
-.team-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.team-slide .slide-content {
-    width: 100%;
-    max-width: 1700px;
-    padding: 0 20px;
-}
-
-.team-header {
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-.team-title {
-    font-size: clamp(36px, 4.5vw, 64px);
-    font-weight: 800;
-    line-height: 1;
-    letter-spacing: -2px;
-    background: linear-gradient(135deg, #fff 0%, #00ffff 50%, #fff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-/* Founder Card Styles - FIXED */
+/* Founder Card Styles - ACTUALLY FIXED */
 .founder-card {
-    background: rgba(255,0,102,0.08);
-    border: 2px solid rgba(255,0,102,0.2);
+    background: rgba(255,0,102,0.15) !important;
+    border: 4px solid rgba(255,0,102,0.5) !important;
     border-radius: 24px;
     padding: 25px;
     margin-bottom: 40px;
     backdrop-filter: blur(10px);
+}
+
+.team-slide .founder-card {
+    background: rgba(255,0,102,0.15) !important;
+    border: 4px solid rgba(255,0,102,0.5) !important;
+}
+
+.team-slide .founder-card:hover {
+    background: rgba(255,0,102,0.2) !important;
+    border-color: rgba(255,0,102,0.7) !important;
 }
 
 .founder-content {
@@ -343,21 +325,6 @@ body {
     font-size: 14px;
     color: #ccc;
     line-height: 1.5;
-}
-
-/* Force override for founder card */
-.team-slide .founder-card {
-    background: rgba(255,0,102,0.08) !important;
-    border: 2px solid rgba(255,0,102,0.2) !important;
-}
-
-/* Ensure team cards stay light */
-.team-slide .team-member-card {
-    background: rgba(255,255,255,0.05) !important;
-}
-
-.team-slide .team-member-card:hover {
-    background: rgba(255,255,255,0.08) !important;
 }
 
 /* Team Grid - OPTIMIZED FOR 6 MEMBERS */
@@ -1877,34 +1844,4 @@ body {
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
-}
-
-/* ABSOLUTE OVERRIDE - Place at the very end of CSS file */
-.team-slide .founder-card {
-    background: rgba(255,0,102,0.08) !important;
-    border: 2px solid rgba(255,0,102,0.2) !important;
-}
-
-.team-slide .founder-card * {
-    background: transparent !important;
-}
-
-/* Force the text colors to show properly */
-.team-slide .founder-card .founder-name {
-    color: #fff !important;
-}
-
-.team-slide .founder-card .founder-role {
-    color: #ff0066 !important;
-}
-
-.team-slide .founder-card .founder-achievement {
-    color: #ccc !important;
-}
-
-/* Make absolutely sure the founder image has gradient */
-.team-slide .founder-card .founder-image {
-    background: linear-gradient(135deg, #ff0066, #ff3399) !important;
-    color: #fff !important;
-}
 }
