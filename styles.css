@@ -1878,3 +1878,13 @@ body {
         print-color-adjust: exact;
     }
 }
+
+/* ABSOLUTE OVERRIDE - Place at the very end of CSS file */
+.team-slide .founder-card {
+    background: rgba(255,0,102,0.08) !important;
+    border: 2px solid rgba(255,0,102,0.2) !important;
+}
+
+.team-slide .founder-card * {
+    background: transparent !important;
+}
