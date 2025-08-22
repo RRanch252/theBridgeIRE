@@ -1172,6 +1172,28 @@ body {
     padding: 20px;
 }
 
+/* Remove this entire media query */
+@media (max-width: 1600px) {
+    .team-grid-main {
+        grid-template-columns: repeat(7, 1fr);  /* This is wrong - forcing 7 columns */
+        gap: 10px;
+    }
+    
+    .image-placeholder {
+        width: 45px;
+        height: 45px;
+        font-size: 16px;
+    }
+    
+    .member-name {
+        font-size: 14px;
+    }
+    
+    .member-achievement {
+        font-size: 8px;
+    }
+}
+
 .roadmap-container {
     width: 100%;
     max-width: 1800px;
