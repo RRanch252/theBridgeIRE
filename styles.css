@@ -1664,27 +1664,6 @@ body {
 }
 
 /* Responsive adjustments - OPTIMIZED FOR 7 MEMBERS */
-@media (max-width: 1600px) {
-    .team-grid-main {
-        grid-template-columns: repeat(7, 1fr);
-        gap: 10px;
-    }
-    
-    .image-placeholder {
-        width: 45px;
-        height: 45px;
-        font-size: 16px;
-    }
-    
-    .member-name {
-        font-size: 14px;
-    }
-    
-    .member-achievement {
-        font-size: 8px;
-    }
-}
-
 @media (max-width: 1400px) {
     .team-grid-main {
         grid-template-columns: repeat(4, 1fr);
