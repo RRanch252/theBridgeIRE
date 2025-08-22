@@ -293,12 +293,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-/* Founder Card Styles */
+/* Founder Card Styles - DARK THEME */
 .founder-card {
-    background: rgba(255,0,102,0.08);
-    border: 2px solid rgba(255,0,102,0.2);
+    background: rgba(20, 20, 20, 0.9);
+    border: 2px solid rgba(255, 0, 102, 0.3);
     border-radius: 24px;
-    padding: 25px;
+    padding: 30px 35px;
     margin-bottom: 40px;
     backdrop-filter: blur(10px);
 }
@@ -306,7 +306,7 @@ body {
 .founder-content {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 .founder-image {
@@ -317,7 +317,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 800;
     color: #fff;
     flex-shrink: 0;
@@ -328,15 +328,17 @@ body {
 }
 
 .founder-name {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .founder-role {
     font-size: 16px;
     color: #ff0066;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    font-weight: 500;
 }
 
 .founder-achievement {
@@ -355,9 +357,9 @@ body {
 }
 
 .team-member-card {
-    background: rgba(255,255,255,0.05);
+    background: rgba(20, 20, 20, 0.9);
     border: 2px solid rgba(255,255,255,0.1);
-    border-radius: 16px;
+    border-radius: 20px;
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
@@ -371,11 +373,10 @@ body {
 .team-member-card:hover {
     transform: translateY(-5px);
     border-color: rgba(0,255,255,0.3);
-    background: rgba(255,255,255,0.08);
+    background: rgba(30, 30, 30, 0.9);
 }
 
 .team-member-card.featured {
-    background: rgba(255,0,102,0.1);
     border-color: rgba(255,0,102,0.3);
 }
 
@@ -398,6 +399,7 @@ body {
     font-weight: 700;
     margin-bottom: 5px;
     line-height: 1.2;
+    color: #fff;
 }
 
 .member-role {
