@@ -265,7 +265,7 @@ body {
     line-height: 1.5;
 }
 
-/* Founder Card Styles - FIXED WITH PROPER ALIGNMENT */
+/* Founder Card Styles - FIXED TO MATCH TEAM GRID WIDTH */
 .founder-card {
     background: rgba(255,0,102,0.15) !important;
     border: 4px solid rgba(255,0,102,0.5) !important;
@@ -273,15 +273,15 @@ body {
     padding: 25px;
     margin: 0 auto 40px auto;
     backdrop-filter: blur(10px);
-    max-width: 1200px;
-    width: 100%;
+    width: calc(100% - 40px);
+    max-width: calc(1200px - 40px);
 }
 
 .team-slide .founder-card {
     background: rgba(255,0,102,0.15) !important;
     border: 4px solid rgba(255,0,102,0.5) !important;
-    max-width: 1200px;
-    width: 100%;
+    width: calc(100% - 40px);
+    max-width: calc(1200px - 40px);
     margin: 0 auto 40px auto;
 }
 
