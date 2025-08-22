@@ -345,6 +345,21 @@ body {
     line-height: 1.5;
 }
 
+/* Force override for founder card */
+.team-slide .founder-card {
+    background: rgba(255,0,102,0.08) !important;
+    border: 2px solid rgba(255,0,102,0.2) !important;
+}
+
+/* Ensure team cards stay light */
+.team-slide .team-member-card {
+    background: rgba(255,255,255,0.05) !important;
+}
+
+.team-slide .team-member-card:hover {
+    background: rgba(255,255,255,0.08) !important;
+}
+
 /* Team Grid - OPTIMIZED FOR 6 MEMBERS */
 .team-grid-main {
     display: grid;
